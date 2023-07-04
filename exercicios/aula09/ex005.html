@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        //window.document.write('Olá Mundo')<br>
+        //document.write(window.document.URL)
+        //window.document.write(window.navigator.appName)
+        var p1=document.getElementsByTagName('p')[1] //selecciona o primeiro paragrafo ('p') numerando 0. a numeracao de paragrafos começa em [0]
+        var corpo=document.body
+        //document.write('Está escrito assim ' + p1.innerText)
+        //corpo.style.backgroundColor='black'
+        //p1.style.color='blue'
+        //document.write(p1.innerText)
+        //document.write(p1.innerHTML)
+        //alert(p1.innerText)
+        /*var d=window.document.getElementById('msg')
+        d.style.background='green' */
+        //d.innerText='Estou aguardando...'
+        //ou
+        //window.document.getElementById('msg').innerText='Olá! '
+        var d=window.document.querySelector('div#msg')
+        d.style.background='blue'
+    </script>
+</body>
+</html>
